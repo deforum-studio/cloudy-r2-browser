@@ -53,7 +53,14 @@ export const ObjectPreviewInner = memo(
 				);
 			}
 			default: {
-				return <FallbackIcon type={itemType} />;
+				return (
+					<>
+						<div className='flex flex-col gap-4'>
+							<a href={`https://test-output.deforum.work/${addLeadingSlash(path)}`} >Direct link</a>
+						</div>
+						<FallbackIcon type={itemType} />
+					</>
+				)
 			}
 		}
 	},

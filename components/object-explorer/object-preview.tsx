@@ -122,6 +122,12 @@ export const ObjectPreview = (): JSX.Element => {
 						className="max-h-[calc(100vh-10rem)] max-w-full"
 					/>
 				)}
+				<div className='flex flex-col gap-4'>
+					<a href={`https://test-output.deforum.work/${addLeadingSlash(previewKey)}`} >Direct link</a>
+					<a href={`/api/bucket/${currentBucket?.raw}${addLeadingSlash(previewKey)}`} >Download</a>
+				</div>
+				
+
 			</div>
 		</dialog>
 	);

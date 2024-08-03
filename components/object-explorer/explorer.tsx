@@ -86,8 +86,9 @@ export const ObjectExplorer = ({ initialObjects, initialCursor }: Props): JSX.El
 		() => [
 			{
 				header: 'Name',
-				minSize: 400,
+				minSize: 500,
 				enableSorting: true,
+				enableResizing: true,
 				// @ts-expect-error - Typescript doesn't know it's a custom sorting function.
 				sortingFn: 'alphanumeric_foldersTop',
 				accessorFn: (object) => object.getName(),

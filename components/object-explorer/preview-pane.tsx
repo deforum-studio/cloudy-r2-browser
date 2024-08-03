@@ -42,6 +42,8 @@ export const PreviewPane = () => {
 						<span>{item.getSize()}</span>
 						<span className="text-sm font-medium">Last Modified</span>
 						<span>{item.getLastModified()?.toLocaleDateString() ?? ''}</span>
+						<span className="text-sm font-medium">Direct Link</span>
+						<span className="text-sm font-medium"><a href={`https://test-output.deforum.work/${item.path}`}>open</a></span>
 					</div>
 				)}
 			</div>
